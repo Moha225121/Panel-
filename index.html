@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" id="html-tag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بانل للأثاث | PANEL Furniture Benghazi</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons & Fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'panel-yellow': '#FACC15',
+                        'panel-blue': '#38BDF8',
+                        'panel-orange': '#C2410C',
+                        'panel-dark': '#0f172a',
+                        'panel-light': '#f8fafc',
+                    },
+                    fontFamily: {
+                        ar: ['Tajawal', 'sans-serif'],
+                        en: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-panel-light text-gray-900 font-ar transition-all duration-300">
+
+<!-- ================= NAVBAR ================= -->
+<nav id="navbar" class="fixed w-full z-50 bg-panel-dark text-white py-4 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center h-16">
+
+        <!-- Hamburger (Mobile) -->
+        <button onclick="toggleMobileMenu()" class="md:hidden text-3xl text-panel-yellow z-50">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center">
+            <div class="bg-white rounded-md px-4 py-2 shadow-sm">
+                <img src="assets/images/logo.png" alt="Panel Logo" class="h-12 w-auto object-contain">
+            </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex items-center space-x-reverse space-x-8 text-sm font-bold">
+            <a href="#home" data-i18n="nav_home" class="hover:text-panel-yellow">الرئيسية</a>
+            <a href="#about" data-i18n="nav_about" class="hover:text-panel-yellow">عن الشركة</a>
+            <a href="#catalog" data-i18n="nav_catalog" class="hover:text-panel-yellow">الكتالوج</a>
+            <a href="#contact" data-i18n="nav_contact" class="hover:text-panel-yellow">تواصل معنا</a>
+
+            <button onclick="toggleLanguage()"
+                class="bg-panel-orange text-white px-4 py-1.5 rounded-full text-xs font-black flex items-center gap-2 hover:bg-panel-yellow hover:text-panel-dark">
+                <i class="fas fa-globe"></i>
+                <span id="lang-text">English</span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ================= MOBILE MENU ================= -->
+<div id="mobile-menu"
+     class="hidden fixed inset-0 bg-panel-dark text-white z-40 flex flex-col items-center justify-center space-y-8 text-xl font-black">
+
+    <a href="#home" onclick="toggleMobileMenu()">الرئيسية</a>
+    <a href="#about" onclick="toggleMobileMenu()">عن الشركة</a>
+    <a href="#catalog" onclick="toggleMobileMenu()">الكتالوج</a>
+    <a href="#contact" onclick="toggleMobileMenu()">تواصل معنا</a>
+
+    <button onclick="toggleLanguage()" class="mt-6 bg-panel-orange px-6 py-2 rounded-full">
+        English
+    </button>
+</div>
+
+<!-- ================= HERO ================= -->
+<section id="home" class="h-screen hero-gradient flex items-center justify-center text-center text-white px-4">
+    <div class="max-w-4xl">
+        <div class="hero-badge" data-i18n="hero_tag"></div>
+
+        <h1 class="hero-title" data-i18n="hero_title"></h1>
+
+        <p class="hero-desc" data-i18n="hero_desc"></p>
+
+        <div class="flex flex-col sm:flex-row gap-6 justify-center">
+            <a href="#catalog" class="btn-primary" data-i18n="btn_explore"></a>
+            <a href="#contact" class="btn-outline" data-i18n="btn_contact"></a>
+        </div>
+    </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="py-24 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl">
+        <h2 class="text-4xl md:text-5xl font-black mb-6" data-i18n="about_title">
+            عن بانل
+        </h2>
+        <p class="text-gray-600 text-lg leading-relaxed" data-i18n="about_desc">
+            بانل للأثاث تقدم حلول أثاث عصرية تجمع بين الجمال والجودة والدقة الهندسية.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CATALOG ================= -->
+<section id="catalog" class="py-24 bg-panel-light">
+    <div class="container mx-auto px-6">
+
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-5xl font-black mb-4" data-i18n="catalog_title"></h2>
+            <div class="h-1 w-24 bg-panel-orange mx-auto"></div>
+            <p class="text-gray-500 mt-6 max-w-xl mx-auto font-medium" data-i18n="catalog_subtitle"></p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+            <div class="bg-white shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1505691723518-36a5ac3be353?q=80&w=2070&auto=format&fit=crop"
+                     class="h-72 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-black mb-2">غرف نوم</h3>
+                    <p class="text-gray-500">تصميم عصري وجودة عالية</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1556911220-e15024d8393e?q=80&w=2070&auto=format&fit=crop"
+                     class="h-72 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-black mb-2">مطابخ</h3>
+                    <p class="text-gray-500">حلول ذكية للمساحات</p>
+                </div>
+            </div>
+
+            <div class="bg-white shadow-lg overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=2070&auto=format&fit=crop"
+                     class="h-72 w-full object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-black mb-2">صالونات</h3>
+                    <p class="text-gray-500">راحة وأناقة</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="py-24 bg-panel-dark text-white">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+        <h2 class="text-4xl md:text-5xl font-black mb-10" data-i18n="contact_title"></h2>
+
+        <form class="bg-white text-panel-dark p-10 shadow-xl">
+            <input type="text" placeholder="الاسم / Name"
+                class="w-full p-4 mb-4 border outline-none">
+            <input type="email" placeholder="البريد / Email"
+                class="w-full p-4 mb-4 border outline-none">
+            <textarea rows="4" placeholder="رسالتك"
+                class="w-full p-4 mb-6 border outline-none"></textarea>
+
+            <button class="bg-panel-orange text-white w-full py-4 font-black hover:bg-panel-yellow hover:text-panel-dark">
+                إرسال
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-black text-white">
+    <div class="container mx-auto px-6 py-20 text-center">
+
+        <div class="flex justify-center mb-10">
+            <div class="bg-white rounded-lg px-5 py-3 shadow-md">
+                <img src="assets/images/logo.png" alt="Panel Logo" class="h-14 w-auto object-contain">
+            </div>
+        </div>
+
+        <div class="flex justify-center gap-10 mb-10 text-2xl">
+            <a href="#" class="text-panel-blue hover:text-white"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-panel-yellow hover:text-white"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-panel-orange hover:text-white"><i class="fab fa-whatsapp"></i></a>
+        </div>
+
+        <p class="text-gray-500 text-xs font-bold tracking-[0.3em] uppercase">
+            © 2024 PANEL FURNITURE · BENGHAZI · LIBYA
+        </p>
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>
