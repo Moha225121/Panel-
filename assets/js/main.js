@@ -35,8 +35,8 @@ const i18n = {
 
 let currentLang = 'ar';
 
-function toggleLanguage() {
-    currentLang = currentLang === 'ar' ? 'en' : 'ar';
+function applyLanguage(lang = currentLang) {
+    currentLang = lang;
 
     const html = document.getElementById('html-tag');
     const body = document.body;
@@ -49,11 +49,20 @@ function toggleLanguage() {
         ? 'bg-panel-light text-gray-900 font-ar transition-all duration-300'
         : 'bg-panel-light text-gray-900 font-en transition-all duration-300';
 
-    langText.textContent = currentLang === 'ar' ? 'English' : 'العربية';
+    if (langText) {
+        langText.textContent = currentLang === 'ar' ? 'English' : 'العربية';
+    }
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
-        el.innerHTML = i18n[currentLang][el.dataset.i18n];
+        const key = el.dataset.i18n;
+        if (i18n[currentLang] && i18n[currentLang][key] !== undefined) {
+            el.innerHTML = i18n[currentLang][key];
+        }
     });
+}
+
+function toggleLanguage() {
+    applyLanguage(currentLang === 'ar' ? 'en' : 'ar');
 }
 
 /* Navbar shrink */
@@ -65,3 +74,6 @@ window.addEventListener('scroll', () => {
 function toggleMobileMenu() {
     document.getElementById('mobile-menu').classList.toggle('hidden');
 }
+
+/* Apply initial language on load so buttons/text are visible immediately */
+document.addEventListener('DOMContentLoaded', () => applyLanguage('ar'));
