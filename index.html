@@ -75,13 +75,14 @@
 <div id="mobile-menu"
      class="hidden fixed inset-0 bg-panel-dark text-white z-40 flex flex-col items-center justify-center space-y-8 text-xl font-black">
 
-    <a href="#home" onclick="toggleMobileMenu()">الرئيسية</a>
-    <a href="#about" onclick="toggleMobileMenu()">عن الشركة</a>
-    <a href="#catalog" onclick="toggleMobileMenu()">الكتالوج</a>
-    <a href="#contact" onclick="toggleMobileMenu()">تواصل معنا</a>
+    <a href="#home" onclick="toggleMobileMenu()" data-i18n="nav_home">الرئيسية</a>
+    <a href="#about" onclick="toggleMobileMenu()" data-i18n="nav_about">عن الشركة</a>
+    <a href="#catalog" onclick="toggleMobileMenu()" data-i18n="nav_catalog">الكتالوج</a>
+    <a href="#contact" onclick="toggleMobileMenu()" data-i18n="nav_contact">تواصل معنا</a>
 
-    <button onclick="toggleLanguage()" class="mt-6 bg-panel-orange px-6 py-2 rounded-full">
-        English
+    <button onclick="toggleLanguage()" class="mt-6 bg-panel-orange px-6 py-2 rounded-full flex items-center gap-2">
+        <i class="fas fa-globe"></i>
+        <span id="lang-text-mobile">English</span>
     </button>
 </div>
 
@@ -180,7 +181,7 @@
         <h2 class="text-4xl md:text-5xl font-black mb-10" data-i18n="contact_title"></h2>
 
         <form class="bg-white text-panel-dark p-10 shadow-xl">
-            <input type="text" placeholder="��لاسم / Name"
+            <input type="text" placeholder="الاسم / Name"
                 class="w-full p-4 mb-4 border outline-none">
             <input type="email" placeholder="البريد / Email"
                 class="w-full p-4 mb-4 border outline-none">
