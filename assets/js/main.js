@@ -5,10 +5,15 @@ const i18n = {
         nav_catalog: "الكتالوج",
         nav_contact: "تواصل معنا",
         hero_tag: "بنغازي - مقابل الجامعة الليبية الدولية",
-        hero_title: "نصنع الفراغ..<br><span>بلمسة إبداع</span>",
-        hero_desc: "تجربة بصرية وهندسية فريدة في صناعة الأثاث المودرن بأعلى المعايير.",
+        hero_title: "نصنع بيئات العمل..<br><span>بلمسة إبداع</span>",
+        hero_desc: "حلول متكاملة للأثاث المكتبي تجمع بين التصميم والجودة والدقة الهندسية.",
         btn_explore: "تصفح الكتالوج",
-        btn_contact: "اطلب الآن"
+        btn_contact: "اطلب الآن",
+        about_title: "عن البانيل للاثاث المكتبي",
+        about_desc: "البانيل للاثاث المكتبي تقدم حلولاً مكتبية متكاملة تجمع بين الجمال والجودة والدقة الهندسية لتناسب بيئات العمل الحديثة.",
+        catalog_title: "الكتالوج",
+        catalog_subtitle: "مكاتب عمل · مساحات عمل · مفروشات · شيبورد · كراسي مكتبية",
+        contact_title: "تواصل معنا"
     },
     en: {
         nav_home: "Home",
@@ -16,10 +21,15 @@ const i18n = {
         nav_catalog: "Catalog",
         nav_contact: "Contact",
         hero_tag: "Benghazi - Opposite LIMU University",
-        hero_title: "Crafting Spaces,<br><span>Defining Style</span>",
-        hero_desc: "A unique visual and engineering experience in modern furniture crafting.",
+        hero_title: "Designing Workspaces,<br><span>Elevating Offices</span>",
+        hero_desc: "Integrated office furniture solutions that blend design, quality, and engineering precision.",
         btn_explore: "View Catalog",
-        btn_contact: "Order Now"
+        btn_contact: "Order Now",
+        about_title: "About Panel for Office Furniture",
+        about_desc: "Panel for office furniture delivers integrated solutions that combine aesthetics, quality, and engineering accuracy for modern work environments.",
+        catalog_title: "Catalog",
+        catalog_subtitle: "Office desks · Workspaces · Furniture · Chipboards · Office chairs",
+        contact_title: "Contact Us"
     }
 };
 
