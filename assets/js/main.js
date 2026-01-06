@@ -41,6 +41,7 @@ function applyLanguage(lang = currentLang) {
     const html = document.getElementById('html-tag');
     const body = document.body;
     const langText = document.getElementById('lang-text');
+    const langTextMobile = document.getElementById('lang-text-mobile');
 
     html.lang = currentLang;
     html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
@@ -49,9 +50,9 @@ function applyLanguage(lang = currentLang) {
         ? 'bg-panel-light text-gray-900 font-ar transition-all duration-300'
         : 'bg-panel-light text-gray-900 font-en transition-all duration-300';
 
-    if (langText) {
-        langText.textContent = currentLang === 'ar' ? 'English' : 'العربية';
-    }
+    const toggleLabel = currentLang === 'ar' ? 'English' : 'العربية';
+    if (langText) langText.textContent = toggleLabel;
+    if (langTextMobile) langTextMobile.textContent = toggleLabel;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.dataset.i18n;
@@ -75,5 +76,5 @@ function toggleMobileMenu() {
     document.getElementById('mobile-menu').classList.toggle('hidden');
 }
 
-/* Apply initial language on load so buttons/text are visible immediately */
+/* Apply initial language on load so text appears immediately */
 document.addEventListener('DOMContentLoaded', () => applyLanguage('ar'));
