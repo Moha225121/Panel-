@@ -2,66 +2,59 @@ html {
     scroll-behavior: smooth;
 }
 
-.font-ar {
-    font-family: 'Tajawal', sans-serif;
-}
+.font-ar { font-family: 'Tajawal', sans-serif; }
+.font-en { font-family: 'Inter', sans-serif; }
 
-.font-en {
-    font-family: 'Inter', sans-serif;
-}
-
-/* Hero Background */
+/* HERO */
 .hero-gradient {
     background:
-        linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.7)),
-        url('https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?q=80&w=2070&auto=format&fit=crop');
+        linear-gradient(rgba(15,23,42,.85), rgba(15,23,42,.7)),
+        url('../images/image.png');
     background-size: cover;
     background-position: center;
 }
 
-/* Hero Text */
 .hero-badge {
-    margin-bottom: 1.5rem;
-    display: inline-block;
     background: #38BDF8;
     color: #0f172a;
-    padding: 0.5rem 1.5rem;
-    font-weight: 800;
+    padding: .5rem 1.5rem;
     border-radius: 9999px;
+    font-weight: 800;
+    margin-bottom: 1rem;
 }
 
 .hero-title {
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: clamp(2.5rem,6vw,5rem);
     font-weight: 900;
-    margin-bottom: 1.5rem;
 }
 
-.hero-title span {
-    color: #FACC15;
-    font-style: italic;
-}
+.hero-title span { color: #FACC15; }
 
 .hero-desc {
     color: #d1d5db;
-    font-size: 1.25rem;
-    margin-bottom: 2.5rem;
+    margin: 1.5rem 0;
 }
 
-/* Buttons */
 .btn-primary {
     background: #FACC15;
-    color: #0f172a;
-    padding: 1.25rem 3rem;
+    padding: 1rem 2.5rem;
     font-weight: 900;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
 }
 
 .btn-outline {
     border: 2px solid #C2410C;
-    color: #C2410C;
-    padding: 1.25rem 3rem;
+    padding: 1rem 2.5rem;
     font-weight: 900;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+}
+
+/* CATALOG HOVER */
+.catalog-card { overflow: hidden; }
+.catalog-img img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+.catalog-card:hover img {
+    transform: scale(1.12);
 }

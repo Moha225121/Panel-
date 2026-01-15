@@ -2,99 +2,75 @@ const i18n = {
     ar: {
         nav_home: "الرئيسية",
         nav_about: "عن الشركة",
+        nav_vision: "الرؤية والأهداف",
         nav_catalog: "الكتالوج",
         nav_contact: "تواصل معنا",
-        hero_tag: "بنغازي - مقابل الجامعة الليبية الدولية",
-        hero_title: "نصنع بيئات العمل..<br><span>بلمسة إبداع</span>",
-        hero_desc: "حلول متكاملة للأثاث المكتبي تجمع بين التصميم والجودة والدقة الهندسية.",
-        btn_explore: "تصفح الكتالوج",
-        btn_contact: "اطلب الآن",
-        about_title: "عن البانيل للاثاث المكتبي",
-        about_desc: "البانيل للاثاث المكتبي تقدم حلولاً مكتبية متكاملة تجمع بين الجمال والجودة والدقة الهندسية لتناسب بيئات العمل الحديثة.",
-        vision_section_title: "رؤيتنا · Our Vision",
-        vision_ar_title: "رؤيتنا",
-        vision_ar_desc: "أن تكون شركة البانيل الاسم الرائد والموثوق في مجال الأثاث المكتبي وتجهيز المباني الإدارية، من خلال تقديم حلول متكاملة تجمع بين التصميم العصري والجودة العالية والوظيفة العملية، والمساهمة في خلق بيئات عمل حديثة وملهمة تعزز الإنتاجية وتحقق أعلى مستويات الراحة والكفاءة لعملائنا.",
-        vision_en_title: "Our Vision",
-        vision_en_desc: "To position Alpanel as a leading and trusted name in office furniture and administrative space solutions by delivering integrated products that combine modern design, high quality, and functional excellence, while creating inspiring work environments that enhance productivity, comfort, and efficiency.",
-        goals_section_title: "أهدافنا · Our Goals",
-        goals_ar_title: "أهدافنا",
-        goals_ar_desc: "نسعى في شركة البانيل إلى تلبية احتياجات المؤسسات والشركات من الأثاث المكتبي المتكامل، بدءًا من المكاتب الإدارية ومحطات العمل ��طاولات الاجتماعات والكراسي المكتبية والشيبورد، وصولًا إلى تجهيز المباني الإدارية بالكامل، مع الالتزام بأعلى معايير الجودة والاحترافية، وتقديم حلول مخصصة تناسب مختلف المساحات وطبيعة الأعمال، وبناء علاقات طويلة الأمد مع عملائنا قائمة على الثقة والالتزام والتميز في التنفيذ.",
-        goals_en_title: "Our Goals",
-        goals_en_desc: "At Alpanel, we aim to provide comprehensive office furniture solutions ranging from executive offices, workstations, meeting tables, office seating, and cupboards to complete administrative building fit-outs, with a strong commitment to quality, professionalism, and customized solutions that meet diverse business needs, while building long-term relationships based on trust, reliability, and superior execution.",
-        catalog_title: "الكتالوج",
-        catalog_subtitle: "مكاتب عمل · مساحات عمل · مفروشات · شيبورد · كراسي مكتبية",
-        contact_title: "تواصل معنا"
+
+        hero_title: "نصنع بيئات العمل<br><span class='text-panel-yellow'>بلمسة إبداع</span>",
+        hero_desc: "حلول متكاملة للأثاث المكتبي تجمع بين التصميم والجودة",
+
+        about_title: "عن شركة البانيل",
+        about_desc: "شركة متخصصة في توفير الأثاث المكتبي وتجهيز المباني الإدارية الحديثة.",
+
+        vision_goals_title: "رؤيتنا وأهدافنا",
+        vision_title: "رؤيتنا",
+        vision_desc: "أن تكون شركة البانيل الاسم الرائد والموثوق في مجال الأثاث المكتبي وتجهيز المباني الإدارية، من خلال تقديم حلول متكاملة تجمع بين التصميم العصري والجودة العالية والوظيفة العملية، والمساهمة في خلق بيئات عمل حديثة وملهمة تعزز الإنتاجية وتحقق أعلى مستويات الراحة والكفاءة لعملائنا.",
+
+        goals_title: "أهدافنا",
+        goals_desc: "نسعى في شركة البانيل إلى تلبية احتياجات المؤسسات والشركات من الأثاث المكتبي المتكامل، بدءًا من المكاتب الإدارية ومحطات العمل وطاولات الاجتماعات والكراسي المكتبية والشيبورد، وصولًا إلى تجهيز المباني الإدارية بالكامل، مع الالتزام بأعلى معايير الجودة والاحترافية، وتقديم حلول مخصصة تناسب مختلف المساحات وطبيعة الأعمال، وبناء علاقات طويلة الأمد مع عملائنا قائمة على الثقة والالتزام والتميز في التنفيذ.",
+
+        catalog_title: "الكتالوج"
     },
+
     en: {
         nav_home: "Home",
         nav_about: "About",
+        nav_vision: "Vision & Goals",
         nav_catalog: "Catalog",
         nav_contact: "Contact",
-        hero_tag: "Benghazi - Opposite LIMU University",
-        hero_title: "Designing Workspaces,<br><span>Elevating Offices</span>",
-        hero_desc: "Integrated office furniture solutions that blend design, quality, and engineering precision.",
-        btn_explore: "View Catalog",
-        btn_contact: "Order Now",
-        about_title: "About Panel for Office Furniture",
-        about_desc: "Panel for office furniture delivers integrated solutions that combine aesthetics, quality, and engineering accuracy for modern work environments.",
-        vision_section_title: "رؤيتنا · Our Vision",
-        vision_ar_title: "رؤيتنا",
-        vision_ar_desc: "أن تكون شركة البانيل الاسم الرائد والموثوق في مجال الأثاث المكتبي وتجهيز المباني الإدارية، من خلال تقديم حلول متكاملة تجمع بين التصميم العصري والجودة العالية والوظيفة العملية، والمساهمة في خلق بيئات عمل حديثة وملهمة تعزز الإنتاجية وتحقق أعلى مستويات الراحة والكفاءة لعملائنا.",
-        vision_en_title: "Our Vision",
-        vision_en_desc: "To position Alpanel as a leading and trusted name in office furniture and administrative space solutions by delivering integrated products that combine modern design, high quality, and functional excellence, while creating inspiring work environments that enhance productivity, comfort, and efficiency.",
-        goals_section_title: "أهدافنا · Our Goals",
-        goals_ar_title: "أهدافنا",
-        goals_ar_desc: "نسعى في شركة البانيل إلى تلبية احتياجات المؤسسات والشركات من الأثاث المكتبي المتكامل، بدءًا من المكاتب الإدارية ومحطات العمل وطاولات الاجتماعات والكراسي المكتبية والشيبورد، وصولًا إلى تجهيز المباني الإدارية بالكامل، مع الالتزام بأعلى معايير الجودة والاحترافية، وتقديم حلول مخصصة تناسب مختلف المساحات وطبيعة الأعمال، وبناء علاقات طويلة الأمد مع عملائنا قائمة على الثقة والالتزام والتميز في التنفيذ.",
-        goals_en_title: "Our Goals",
-        goals_en_desc: "At Alpanel, we aim to provide comprehensive office furniture solutions ranging from executive offices, workstations, meeting tables, office seating, and cupboards to complete administrative building fit-outs, with a strong commitment to quality, professionalism, and customized solutions that meet diverse business needs, while building long-term relationships based on trust, reliability, and superior execution.",
-        catalog_title: "Catalog",
-        catalog_subtitle: "Office desks · Workspaces · Furniture · Chipboards · Office chairs",
-        contact_title: "Contact Us"
+
+        hero_title: "Designing Workspaces<br><span class='text-panel-yellow'>With Creativity</span>",
+        hero_desc: "Integrated office furniture solutions blending design and quality",
+
+        about_title: "About Alpanel",
+        about_desc: "A company specialized in modern office furniture and administrative building solutions.",
+
+        vision_goals_title: "Vision & Goals",
+        vision_title: "Our Vision",
+        vision_desc: "To position Alpanel as a leading and trusted name in office furniture and administrative space solutions by delivering integrated products that combine modern design, high quality, and functional excellence, while creating inspiring work environments that enhance productivity, comfort, and efficiency.",
+
+        goals_title: "Our Goals",
+        goals_desc: "At Alpanel, we aim to provide comprehensive office furniture solutions ranging from executive offices, workstations, meeting tables, office seating, and cupboards to complete administrative building fit-outs, with a strong commitment to quality, professionalism, and customized solutions that meet diverse business needs, while building long-term relationships based on trust, reliability, and superior execution.",
+
+        catalog_title: "Catalog"
     }
 };
 
-let currentLang = 'ar';
+let currentLang = "ar";
 
-function applyLanguage(lang = currentLang) {
+function applyLanguage(lang) {
     currentLang = lang;
 
-    const html = document.getElementById('html-tag');
-    const body = document.body;
-    const langText = document.getElementById('lang-text');
-    const langTextMobile = document.getElementById('lang-text-mobile');
+    document.getElementById("html-tag").dir = lang === "ar" ? "rtl" : "ltr";
+    document.body.className = lang === "ar" ? "font-ar" : "font-en";
 
-    html.lang = currentLang;
-    html.dir = currentLang === 'ar' ? 'rtl' : 'ltr';
-
-    body.className = currentLang === 'ar'
-        ? 'bg-panel-light text-gray-900 font-ar transition-all duration-300'
-        : 'bg-panel-light text-gray-900 font-en transition-all duration-300';
-
-    const toggleLabel = currentLang === 'ar' ? 'English' : 'العربية';
-    if (langText) langText.textContent = toggleLabel;
-    if (langTextMobile) langTextMobile.textContent = toggleLabel;
-
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.dataset.i18n;
-        if (i18n[currentLang] && i18n[currentLang][key] !== undefined) {
-            el.innerHTML = i18n[currentLang][key];
-        }
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+        el.innerHTML = i18n[lang][el.dataset.i18n];
     });
+
+    document.getElementById("lang-text").textContent =
+        lang === "ar" ? "English" : "العربية";
+
+    document.getElementById("lang-text-mobile").textContent =
+        lang === "ar" ? "English" : "العربية";
 }
 
 function toggleLanguage() {
-    applyLanguage(currentLang === 'ar' ? 'en' : 'ar');
+    applyLanguage(currentLang === "ar" ? "en" : "ar");
 }
-
-/* Navbar shrink */
-window.addEventListener('scroll', () => {
-    const nav = document.getElementById('navbar');
-    nav.classList.toggle('py-2', window.scrollY > 50);
-});
 
 function toggleMobileMenu() {
-    document.getElementById('mobile-menu').classList.toggle('hidden');
+    document.getElementById("mobile-menu").classList.toggle("hidden");
 }
 
-/* Apply initial language on load so text appears immediately */
-document.addEventListener('DOMContentLoaded', () => applyLanguage('ar'));
+document.addEventListener("DOMContentLoaded", () => applyLanguage("ar"));
