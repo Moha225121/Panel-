@@ -51,18 +51,29 @@ let currentLang = "ar";
 function applyLanguage(lang) {
     currentLang = lang;
 
+    // Set page direction
     document.getElementById("html-tag").dir = lang === "ar" ? "rtl" : "ltr";
-    document.body.className = lang === "ar" ? "font-ar" : "font-en";
 
+    // Toggle only the font class without removing other body classes
+    document.body.classList.remove("font-ar", "font-en");
+    document.body.classList.add(lang === "ar" ? "font-ar" : "font-en");
+
+    // Apply translations only if a value exists for the key
     document.querySelectorAll("[data-i18n]").forEach(el => {
-        el.innerHTML = i18n[lang][el.dataset.i18n];
+        const key = el.dataset.i18n;
+        const value = i18n[lang] && i18n[lang][key];
+        if (value !== undefined) {
+            el.innerHTML = value;
+        }
+        // If no value is defined, keep existing content (pre-filled in HTML)
     });
 
-    document.getElementById("lang-text").textContent =
-        lang === "ar" ? "English" : "العربية";
+    // Update language toggle button labels
+    const langText = document.getElementById("lang-text");
+    if (langText) langText.textContent = lang === "ar" ? "English" : "العربية";
 
-    document.getElementById("lang-text-mobile").textContent =
-        lang === "ar" ? "English" : "العربية";
+    const langTextMobile = document.getElementById("lang-text-mobile");
+    if (langTextMobile) langTextMobile.textContent = lang === "ar" ? "English" : "العربية";
 }
 
 function toggleLanguage() {
